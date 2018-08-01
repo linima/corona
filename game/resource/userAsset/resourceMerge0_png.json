@@ -1,0 +1,13 @@
+{"file":"resourceMerge0_png.png","frames":{
+"result-p1.png":{"x":1,"y":1,"w":545,"h":729,"offX":0,"offY":0,"sourceW":545,"sourceH":729},
+"btn-lottery.png":{"x":1,"y":731,"w":392,"h":106,"offX":0,"offY":0,"sourceW":392,"sourceH":106},
+"bottle.png":{"x":394,"y":731,"w":92,"h":383,"offX":0,"offY":0,"sourceW":92,"sourceH":383},
+"drop3.png":{"x":1,"y":838,"w":155,"h":195,"offX":0,"offY":0,"sourceW":155,"sourceH":195},
+"drop4.png":{"x":157,"y":838,"w":154,"h":158,"offX":0,"offY":0,"sourceW":154,"sourceH":158},
+"drop2.png":{"x":157,"y":997,"w":138,"h":170,"offX":0,"offY":0,"sourceW":138,"sourceH":170},
+"drop6.png":{"x":1,"y":1034,"w":137,"h":118,"offX":0,"offY":0,"sourceW":137,"sourceH":118},
+"drop5.png":{"x":1,"y":1153,"w":135,"h":105,"offX":0,"offY":0,"sourceW":135,"sourceH":105},
+"drop1.png":{"x":1,"y":1259,"w":108,"h":124,"offX":0,"offY":0,"sourceW":108,"sourceH":124},
+"skip.png":{"x":1,"y":1384,"w":132,"h":64,"offX":0,"offY":0,"sourceW":132,"sourceH":64},
+"score.png":{"x":312,"y":838,"w":59,"h":103,"offX":0,"offY":0,"sourceW":59,"sourceH":103},
+"count-down.png":{"x":110,"y":1270,"w":214,"h":32,"offX":0,"offY":0,"sourceW":214,"sourceH":32}}}

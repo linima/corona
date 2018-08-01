@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="launch" previous="" next="" version="2.2">
+  <item type="instance" UID="3360"/>
+  <item type="variable" variableName="score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="countdown" variableType="number" initValue="20"/>
+  <item type="variable" variableName="from" variableType="string" initValue=""/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnTouchEndEvent" callName="onTouchEnd" isTrigger="true" target="Touch"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22MainScene%22" name="18"/>
+    </item>
+  </item>
+</eventSheets>

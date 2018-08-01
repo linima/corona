@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<title>科罗娜啤酒</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="page page-enter" id="enter">
+			<div class="page flex legal" id="legal">
+				<div class="tit"><img src="img/question.png"></div>
+				<div class="opt" id="yes">Yes, I am older than 18 years old</div>
+				<div class="opt" id="no">No, I am not yet 18 years old</div>
+				<div class="arrow"></div>
+			</div>
+			<div class="page flex sorry hide" id="sorry">
+				<p class="tips">You must be at the <br>legal drinking age to <br>access this website</p>
+				<div class="btn back" id="back"></div>
+			</div>
+		</div>
+		<div class="page flex page-launch hide" id="launch">
+			<div class="rule-btn" id="ruleBtn">Terms and conditions</div>
+			<div class="img"><img src="img/corona.jpg"></div>
+			<div class="txt">Please choose where to buy Corona. <br>Participate in the lime game, <br>win island tours and premium gifts.</div>
+			<div class="radios">
+				<label><input type="radio" value="bar" name="from" checked><span>Bar or Restaurant</span></label>
+				<label><input type="radio" value="market" name="from"><span>Supermarket</span></label>
+			</div>
+			<a class="btn entry" id="joinIn" href="game/index.html?from=bar">Enter Now</a>
+		</div>
+		<div class="page page-rule hide" id="rule">
+		    <div class="close">&times;</div>
+		    <div class="tit"><img src="img/rule-tit.png" alt=""></div>
+		    <div class="cont">
+		        <p>
+		            一、科罗娜青柠执行渠道抽奖活动规则<br>
+		            （下称“本活动”）说明：<br>
+		            自2018年4月20日至6月30日，凡在有科罗娜促销活动标识的指定酒吧、餐厅或超市一次性购买现场指定瓶数的科罗娜啤酒，即可参与抽奖赢取科罗娜海岛游及精美奖品。
+		        </p>
+		        <p>
+		            二、活动时间：<br>
+		            开始时间：2018年4月20日00:00:00;<br>
+		            结束时间：2018年6月30日23:59:59;<br>
+		            兑奖结束时间：2018年7月15日23:59:59
+		        </p>
+		        <p>
+		            三、活动参与城市：<br>
+		            安阳市，常德，常州，郴州，登封市，海门，合肥，怀化，淮安市区，黄石市，焦作市，昆山，娄底，洛阳，南京，南通，南阳市，启东，如东，商丘，邵阳，十堰市，苏州，泰州，无锡，武汉，新密市，新乡市，信阳市，兴化，宿迁，徐州，盐城，扬州，宜昌市，长沙，郑州，周口市，驻马店市区，哈尔滨，鲅鱼圈，大连，葫芦岛，锦州，盘锦，沈阳，营口市，长春，包头，北京，呼和浩特，济南，秦皇岛，青岛，石家庄，唐山，天津市，潍坊，烟台，张店，张家口，佛山，广东河源，广东惠州，广州，海口，三亚，东莞，深圳，珠海，杭州，湖州，嘉兴，丽水，宁波，衢州，市郊慈溪，市郊奉化，市郊象山，市郊余姚，台州市，温州，义乌，舟山，安顺市，贵阳市，桂林，昆明，柳州，南宁市，遵义市，宝鸡，成都，兰州，太原，乌鲁木齐，乌鲁木齐，西宁，银川，重庆，上海
+		        </p>
+		        <p>
+		            四、奖项设置：<br>
+		            一等奖：共2名<br>
+		            共2个目的地，分别为印度尼西亚巴厘岛、泰国苏梅岛<br>    
+		            *奖品包括单人从中奖者所在距离最近且有航班的城市往返机票+1晚当地特色酒店住宿。（旅行签证由消费者自行办理；行程可能需要转机，以中奖者与旅行社最终签署的履行合同为准）<br>
+		            *行权期为2018年4月30日至2018年12月30日<br>
+		            *若中奖消费者未能在行权期内与旅行社联系并与其具体沟通旅行出发时间点的选择等具体事宜并签订所需书面文件及材料，将视为消费者放弃奖品，主办方将不作其他任何补偿。<br>
+		            *奖品不得调换、转让或兑换现金，亦不可作价销售。
+		        </p>
+		        <p>
+		            二等奖：<br>    
+		            Beats蓝牙无线运动耳机（黑/白），共10份<br>
+		            富士一次成像相机 共21份<br>
+		            拉卡拉跨界智能手环 共102份<br>
+		            索尼便携音响 共24份<br>
+		            飞利浦电动牙刷 共16份
+		        </p>
+		        <p>
+		            三等奖：<br>
+		            科罗娜USB青柠插排 共1600份
+		        </p>
+		        <p>
+		            四等奖：<br>
+		            科罗娜沙滩巾 共600份
+		        </p>
+		        <p>
+		            五等奖：<br>
+		            科罗娜PIN套组 共2000份
+		        </p>
+		        <p>
+		            六等奖：<br>
+		            科罗娜帆布包 共800份<br>
+		            科罗娜Bottle T恤衫，共1500份<br>
+		            科罗娜Logo T恤衫， 共1500份<br>
+		            科罗娜拖鞋 共5000份
+		        </p>
+		     
+		        <p>
+		            五、活动规则：<br>
+		            1、2018年4月20日至2018年6月30日期间，在有科罗娜促销活动标识的指定酒吧、餐厅或超市一次性购买现场指定瓶数的科罗娜啤酒，即可获1次抽奖机会。<br>
+		            2、消费者扫描现场二维码，关注科罗娜官方微信，
+		            参与活动，现场完成抽奖。<br>
+		            3、兑奖方式：<br>
+		            a)“一等奖“兑奖方式：主办方将在中奖后的14个工作日内主动联系中奖消费者，确认绑定的手机号对应的实名制登记信息并核对身份。<br>
+		            b)获奖者实名信息登记后不得更改或转让，且应与旅行社签约的行权人身份信息、手机号码保持一致。<br>
+		            c)主办方将告知相关旅行签约事宜及须知中奖后的14个工作日内旅行社会与核对身份后的获奖者联系并与其具体沟通旅行出发时间点的选择等具体事宜或签订所需书面文件及材料。同时获奖者可通过科罗娜官方微信询问详情。<br>
+		            d)“二等奖”、“三等奖”、“四等奖”的兑奖方式：<br>
+		            通过扫描现场二维码进入官方微信，后进入的活动网站（以下简称“活动网站”）填写寄送信息后领取奖品。主办方将会在消费者中奖提交信息后的10个工作日内将相应奖品根据消费者填报的具体地址和信息发货。<br>
+		            e)如主办方无法联系上中奖消费者领取以上奖项，则视消费者自动放弃获奖资格。
+		        </p>
+		        <p>六、本次活动由百威英博（中国）销售有限公司主办。</p>
+		        <p>
+		            七、领奖规则：<br>
+		            1、 消费者在活动网站提交信息后用户将不能对个人信
+		            息进行修改，所有个人信息将作为获奖后领奖的凭证； <br>
+		            2、 本次活动奖品个人所得税由获奖者自理，活动主办方有权按照中华人民共和国个人所得税法的有关规定，代扣代缴获奖者在本次活动中依法应当缴纳的个人所得税；<br>
+		            3、 所有奖品以实物为准，不得再行转让或用于任何其他商业目的，所有奖品     仅限于个人使用，兑奖后不提供任何退换服务。
+		        </p>
+		        <p>
+		            八、其他说明：<br>
+		            1、 活动参与者理解并同意，活动参与者本人在参加本活动前已完整阅读了本活动规则（包括活动网站的规则）；对活动规则已完全理解并全部同意。活动参与者保证，在活动过程中，将完全遵照活动规则的规定参与活动；
+		            凡在本此活动中涉嫌使用不正当手段者，或主办方确有证据证明认为其有舞弊或其他不正当行为的活动参与者，主办方有权取消其参与活动、兑换奖品的权利。如有违反活动规则的恶意刷票、破坏等行为，会对涉事账号进行封号和取消活动资格处理。<br>
+		            2、本活动仅限个人参与，参与者需年满 18 周岁（以本活动开始之日起为准），且具有完全民事行为能力。<br>
+		            3、主办方承诺根据中华人民共和国相关法律法规的规定就参与方参加本次活动而提供的信息予以保密。<br>
+		            4、获奖者需提供照片并同意其姓名、肖像等信息被用于活动网站及相关的活动展示，所有获奖者的姓名及地区信息将被公布，获奖者应按照主办方要求签署有关授权文件及与活动有关的必要文件，否则视为自动放弃中奖资格。<br>
+		            5、参加活动的消费者如发现有任何舞弊、欺诈或非真实交易的情形，主办方有权取消该消费者的中奖资格。<br>
+		            6、获奖者需经主办方工作人员核实真实有效的身份信息和获奖凭证方可获取奖品，如无法提供，则主办方有权拒绝兑奖。<br>
+		            7、因获奖者提供的联系方式有误，导致无法联系，或在中奖名单公布后72小时内内获奖者仍未与主办方取得联系，或联系后未在主办方另行指定期间内兑奖，视为获奖者自行放弃获奖资格及由此产生之权利，主办方不予补偿。<br>
+		            8、若有获奖者自行放弃获奖资格或存在上述被视为放弃获奖资格情形，主办方将按照积分由高到低排名递补其他获奖者。<br>
+		            9、主办方对本规则做出修改时，最新版本之规则将载于活动网站。主办方有权根据法律法规、司法或行政命令的要求以及活动的实际情况，在法律允许的范围内随时取消、中止或终止此次活动。<br>
+		            10、在因活动网站的原因（包括但不限于活动网站的规则）导致消费者投诉或者索赔的，主办方将不负责赔偿，但会尽力协助消费者与网站沟通协商解决。<br>
+		            11、对本次活动的任何参与应被视为参与者认知并完全理解，其将从事的任何活动或者接受的任何奖品可能存在着伤害（包括但不仅限于终身伤残和死亡）和社会/经济损失的风险，原因可能不仅来自参与者自己的作为、不作为或疏忽，也可能来自他人的作为、不作为或疏忽以及活动规则或者所使用之场地或任何设备的状况，而且，可能还存在参与者在此时尚不知晓或者无法合理预见的其他风险。活动参与者特此声明其承担与其参加本活动有关的任何和所有风险及其后果。活动参与者明确免除和放弃由于参加本活动或其他原因而可能享有的或者在此后所产生的,就人身伤亡或财产损害而对活动主办单位、主办人、任何活动赞助商及其各自的每一相关实体和关系企业、遗产管理人、代理人、高阶员工、所有人、员工、以及其他参加者(合称“被免责者”)提起的任何和一切损害赔偿要求。<br>
+		            12、活动过程中出现“不可抗力”事件或计算机系统故障直接或间接地造成活动主办方无法履行其全部或部分义务，则活动主办方将免予履行该义务，并无需承担相应的责任。“不可抗力”事件包括但不限于，地震、台风、火灾、水灾、战争、法律法规调整、政府命令禁止、因黑客攻击、计算机病毒影响、系统崩溃、数据丢失或其他人为原因造成计算机系统故障，及其他自然或人为灾害等导致活动无法继续开展的，且活动主办方不可预见、无法避免并无法控制的事件。
+		        </p>
+		    </div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('#yes').on('click', function(){
+				$('#launch').removeClass('hide');
+				$('#legal').addClass('hide');
+				$('#enter').addClass('hide');
+			});
+			$('#no').on('click', function(){
+				$('#legal').addClass('hide');
+				$('#sorry').removeClass('hide');
+			});
+			$('#back').on('click', function(){
+				$('#sorry').addClass('hide');
+				$('#legal').removeClass('hide');
+			});
+			$('#ruleBtn').on('click', function(){
+				$('#launch').addClass('hide');
+				$('#rule').removeClass('hide');
+			});
+			$('#rule').on('click', function(){
+				$('#rule').addClass('hide');
+				$('#launch').removeClass('hide');
+			});
+		})
+	</script>
+</body>
+</html>

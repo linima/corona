@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="finally" previous="" next="" version="2.2">
+  <item type="instance" UID="3438"/>
+  <item type="instance" UID="3444"/>
+  <item type="instance" UID="3435"/>
+  <item type="instance" UID="3450"/>
+  <item type="instance" UID="3426"/>
+  <item type="instance" UID="3441"/>
+  <item type="instance" UID="3429"/>
+  <item type="variable" variableName="score" variableType="number" initValue="0"/>
+  <item type="variable" variableName="countdown" variableType="number" initValue="20"/>
+  <item type="variable" variableName="from" variableType="string" initValue=""/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsBetweenValuesEvent" callName="isBetweenValues" isTrigger="false" target="System">
+      <item valueDataType="number" value="System.score" name="value"/>
+      <item valueDataType="number" value="0" name="lowerValue"/>
+      <item valueDataType="number" value="5" name="highValue"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="AITextField3443">
+      <item valueDataType="string" value="%22Corona%20Lime%20Newcomer%22" name="1"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsBetweenValuesEvent" callName="isBetweenValues" isTrigger="false" target="System">
+      <item valueDataType="number" value="System.score" name="value"/>
+      <item valueDataType="number" value="6" name="lowerValue"/>
+      <item valueDataType="number" value="10" name="highValue"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="AITextField3443">
+      <item valueDataType="string" value="%22Corona%20Lime%20Elite%22" name="1"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="System">
+      <item valueDataType="any" value="System.from" name="value1"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="%22bar%22" name="value2"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="OnButtonTapEvent" callName="onButtonTap" isTrigger="true" target="AISprite3434"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoURL" target="Browser">
+      <item valueDataType="string" value="%22..%2Flottery.html%22" name="2"/>
+      <item valueDataType="number" value="0" name="3"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="CompareTwoValuesEvent" callName="compareTwoValue" isTrigger="false" target="System">
+      <item valueDataType="any" value="System.from" name="value1"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="%22market%22" name="value2"/>
+    </item>
+    <item type="condition" callTarget="instance" paramsClass="OnButtonTapEvent" callName="onButtonTap" isTrigger="true" target="AISprite3434"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoURL" target="Browser">
+      <item valueDataType="string" value="%22..%2Flottery.html%22" name="2"/>
+      <item valueDataType="number" value="0" name="3"/>
+    </item>
+  </item>
+</eventSheets>
