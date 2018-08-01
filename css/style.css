@@ -10,7 +10,7 @@ html,body{
 }
 body{
 	color: #fff;
-	font-family: font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: microsoft yahei, arial;
 	background: #132039 url(../img/bg.jpg) center;
 	background-size: cover;
 }
