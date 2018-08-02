@@ -121,12 +121,9 @@
 		</div>
 		<div class="page flex page-pop hide" id="scane">
 			<div class="flex cont">
+				<h3>Buy Corona, Enter to Win!</h3>
 				<p>
-					Please contact Corona <br>
-					promoter or waiter. Get the <br>
-					authorized QR code for<br>
-					Corona purchasing and<br>
-					check the winning results.
+					Please contact the Corona promoter <br>or waiter for authorized QR code.
 				</p>
 				<div class="bottle"></div>
 			</div>
@@ -166,7 +163,7 @@
 					<textarea></textarea>
 				</div>
 				<button class="btn submit" id="formSubmit">Submit Now</button>
-				<p class="tip">*Please complete your personal information and submit</p>
+				<p class="tip">*For demonstration purposes only, not as a real winning.</p>
 			</div>
 		</div>
 		<div class="page flex page-pop hide" id="successTip">
@@ -210,10 +207,6 @@
 					'prize': 'Second Prize',
 					'name': 'SONY portable speaker',
 					'img': 'img/prize5.png'
-				},{
-					'prize': 'Second Prize',
-					'name': 'PHILIPS electric toothbrush',
-					'img': 'img/prize3.png'
 				},{
 					'prize': 'Third Prize',
 					'name': 'Corona lime socket',
@@ -259,17 +252,20 @@
 					duration: 8000,
 					animateTo: angle+1440,
 					callback: function(){
-						$("#scane").removeClass('hide');
-						$('#lottery').addClass('hide');
+						
 					}
 				});
+				setTimeout(function(){
+					$("#scane").removeClass('hide');
+					$('#lottery').addClass('hide');
+				}, 5500)
 			});
 
 			//scane
 			$('#scaneQrcode').on('click', function(){
 				$('#scane').addClass('hide');
 				$('#scanGif').removeClass('hide');
-				var random = Math.floor(Math.random() * 12);
+				var random = Math.floor(Math.random() * 11);
 				$('#result').find('img').attr('src', result[random].img);
 				$('#result').find('h3').html(result[random].prize);
 				$('#result').find('h4').html(result[random].name);
