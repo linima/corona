@@ -238,6 +238,20 @@ img{
 .page-success .prize h4{
 	font-weight: normal;
 }
+.page-success .prize div{
+	position: relative;
+}
+.page-success .prize div .tip{
+	position: absolute;
+	width: 400px;
+	padding: 15px 0;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	font-size: 22px;
+	background: rgba(0,0,0,.65);
+}
 .page-success .form{
 	margin-top: 30px;
 }
